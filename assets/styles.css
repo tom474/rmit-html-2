@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: black;
+    position: sticky;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.header .logo {
+    width: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar ul a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 8px 30px;
+}
+
+.navbar ul a:hover {
+    color: #ccc;
+}
+
+.navbar ul .buy-now {
+    color: red;
+}
+
+.navbar ul .buy-now:hover {
+    color: rgb(255, 145, 0);
+}
+
+/* Hero */
+.hero {
+    padding-top: 10px;
+    height: calc(100vh - 80px);
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .banner {
+    width: 90%;
+}
+
+/* Products */
+.products {
+    height: 100vh;
+    margin-top: 20px;
+    padding: 30px 0 0;
+    background: #fff;
+}
+
+.products h1 {
+    font-size: 5rem;
+    font-weight: 1.8;
+    text-align: center;
+    margin: 50px 0 30px;
+    padding-top: 10px;
+}
+
+.products .item-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products .photo {
+    width: 50vh;
+}
+
+.products .item:hover {
+    background: #555;
+}
+
+.products .product-name {
+    width: 50vh;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 1.5;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.products .price {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.products .item:hover .product-name,
+.products .item:hover .price {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    margin-top: 55px;
+    padding: 50px 0 58px;
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+}
+
+.contact {
+    padding-left: 40px;
+    color: #fff;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact p {
+    margin-bottom: 7px;
+}
+
+.contact .contact-us {
+    font-size: 2rem;
+    font-weight: 2;
+    margin-bottom: 10px;
+}
+
+footer .location {
+    margin-right: 50px;
+}
+
+footer .location p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 2;
+    margin-bottom: 10px;
+}
+
+footer .map {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+/* Form */
+.form {
+    margin: 50px 0 50px;
+    text-align: center;
+}
+
+.form h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.form form {
+    width: 450px;
+    margin: 20px auto 0 auto;
+}
+
+.form .info {
+    padding: 10px 0 10px;
+    text-align: left;
+    padding-left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form .info legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form .select-product {
+    height: 200px;
+}
+
+.form strong {
+    font-weight: bold;
+}
+
+.form .btn {
+    margin-top: 20px;
+    background: black;
+}

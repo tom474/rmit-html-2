@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TMC Sport</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/reset.css" />
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content=".assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="content">
+                <!-- Navbar -->
+                <a href="index.html#">
+                    <img
+                        src="./assets/images/logo.jpg"
+                        alt="logo"
+                        class="logo"
+                    />
+                </a>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html#shoes">Shoes</a></li>
+                        <li><a href="index.html#clothing">Clothing</a></li>
+                        <li>
+                            <a href="index.html#accessories">Accessories</a>
+                        </li>
+                        <li><a href="index.html#sport">Sport</a></li>
+                        <li><a href="index.html#ball">Ball</a></li>
+                        <li>
+                            <a href="index.html#shoes" class="buy-now"
+                                >Buy now!</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Hero -->
+            <div class="hero">
+                <img
+                    src="./assets/images/banner.jpg"
+                    alt="banner"
+                    class="banner"
+                />
+            </div>
+
+            <!-- Form -->
+            <div class="form">
+                <h2>Order Product Form</h2>
+                <form action="form-processing" method="post" id="item-list">
+                    <fieldset class="info">
+                        <legend>Enter your personal information</legend>
+                        <label for="firstName">First name: </label>
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            required
+                        />
+                        <br /><br />
+                        <label for="lastName">Last name: </label>
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            required
+                        />
+                        <br /><br />
+                        <label for="birth">Day of Birth: </label>
+                        <input type="date" id="birth" name="birth" required />
+                    </fieldset>
+                    <br />
+                    <fieldset class="info">
+                        <legend>Enter your shipping information</legend>
+                        <label for="address">Address: </label>
+                        <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            required
+                        />
+                        <br /><br />
+                        <label for="district">District: </label>
+                        <select name="district" id="district" required>
+                            <option value="">Select a district</option>
+                            <option value="1">District 1</option>
+                            <option value="2">District 2</option>
+                            <option value="3">District 3</option>
+                            <option value="4">District 4</option>
+                            <option value="5">District 5</option>
+                            <option value="6">District 6</option>
+                            <option value="7">District 7</option>
+                            <option value="8">District 8</option>
+                            <option value="9">District 9</option>
+                            <option value="10">District 10</option>
+                        </select>
+                        <br /><br />
+                        <label for="city">City: </label>
+                        <select name="city" id="city" required>
+                            <option value="">Select a city</option>
+                            <option value="HN">Ha noi</option>
+                            <option value="HCM">Ho Chi Minh</option>
+                            <option value="DN">Da Nang</option>
+                        </select>
+                        <br /><br />
+                        <label for="postcode">Postcode: </label>
+                        <input
+                            type="text"
+                            id="postcode"
+                            name="postcode"
+                            required
+                        />
+                    </fieldset>
+                    <br />
+                    <fieldset class="info">
+                        <legend>Purchase Options</legend>
+                        <label for="select-product">Select Product(s)</label>
+                        <select
+                            class="select-product"
+                            name="select-product"
+                            id="select-product"
+                            required
+                            multiple
+                        >
+                            <optgroup label="Shoes">
+                                <option value="Ultra adidas 4D Shoes">
+                                    Ultra adidas 4D Shoes
+                                </option>
+                                <option value="Ultraboost 1.0 Shoes">
+                                    Ultraboost 1.0 Shoes
+                                </option>
+                                <option value="Ultraboost Light Shoes">
+                                    Ultraboost Light Shoes
+                                </option>
+                                <option value="NMD_S1 Shoes">
+                                    NMD_S1 Shoes
+                                </option>
+                            </optgroup>
+                            <optgroup label="Clothing">
+                                <option
+                                    value="Manchester United 22/23 Home Jersey"
+                                >
+                                    Manchester United 22/23 Home Jersey
+                                </option>
+                                <option
+                                    value="Manchester United Icon Woven Pants"
+                                >
+                                    Manchester United Icon Woven Pants
+                                </option>
+                                <option
+                                    value="adidas x Marinmekko Training Tee"
+                                >
+                                    adidas x Marinmekko Training Tee
+                                </option>
+                                <option
+                                    value="Future Icons Badge Of Sport Pants"
+                                >
+                                    Future Icons Badge Of Sport Pants
+                                </option>
+                            </optgroup>
+                            <optgroup label="Accessories">
+                                <option
+                                    value="3-Stripes Cushioned Crew Socks 3 Pairs"
+                                >
+                                    3-Stripes Cushioned Crew Socks 3 Pairs
+                                </option>
+                                <option value="Multifit 360 Glove Single">
+                                    Manchester United Icon Woven Pants
+                                </option>
+                                <option value="Basketball Ankle Wrap">
+                                    Basketball Ankle Wrap
+                                </option>
+                                <option value="Tiro Club Shin Guards">
+                                    Tiro Club Shin Guards
+                                </option>
+                            </optgroup>
+                            <optgroup label="Sport">
+                                <option
+                                    value="X Speedportal Messi.3 Turf Boots"
+                                >
+                                    X Speedportal Messi.3 Turf Boots
+                                </option>
+                                <option
+                                    value="X Speedportal.3 Firm Ground Boots"
+                                >
+                                    X Speedportal.3 Firm Ground Boots
+                                </option>
+                                <option
+                                    value="X Speedportal Messi.1 Firm Ground Boots"
+                                >
+                                    X Speedportal Messi.1 Firm Ground Boots
+                                </option>
+                                <option
+                                    value="Predator Accuracy.3 Low Firm Ground Boots"
+                                >
+                                    Future Icons Badge Of Sport Pants
+                                </option>
+                            </optgroup>
+                            <optgroup label="Ball">
+                                <option value="Oceanz Pro Football">
+                                    Oceanz Pro Football
+                                </option>
+                                <option value="UCL Pro Istanbul Ball">
+                                    UCL Pro Istanbul Ball
+                                </option>
+                                <option value="All Court 3.0 Ball">
+                                    All Court 3.0 Ball
+                                </option>
+                                <option value="Pro 3.0 Official Game Ball">
+                                    Pro 3.0 Official Game Ball
+                                </option>
+                            </optgroup>
+                        </select>
+                        <br /><br />
+                        <p class="hint">
+                            <strong>Hint: </strong>Use Shift/Ctrl key to select
+                            multiple products!
+                        </p>
+                    </fieldset>
+                    <input class="btn" type="submit" value="Order Now!" />
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <p class="contact-us">Contact us:</p>
+                <p>
+                    Email:
+                    <a href="mailto:emsignouc0407@gmail.com" target="_blank"
+                        >emsignouc0407@gmail.com</a
+                    >
+                </p>
+                <p>
+                    Tel: <a href="tel:0901727436" target="_blank">0901727436</a>
+                </p>
+                <p>
+                    Facebook:
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100024044983259"
+                        target="_blank"
+                        >Tran Manh Cuong</a
+                    >
+                </p>
+            </div>
+            <div class="location">
+                <p>Our Location:</p>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0717236673745!2d106.69357801458003!3d10.728951492353774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fbea5fe3db1%3A0xfae94aca5709003f!2zxJDhuqFpIEjhu41jIFJNSVQgTmFtIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1679455685473!5m2!1svi!2s"
+                        width="300"
+                        height="255"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
